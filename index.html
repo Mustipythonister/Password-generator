@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password - Generator</title>
+
+	<link rel="stylesheet" href="style.css">
+	<script defer src="script.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body onload="load()">
+
+<div class="container">
+	<div id="box1" class="box">
+<input onkeyup="update()" id="length" class="input" placeholder="How many charachters do you want for your password?">
+<button onclick="gen()" class="button is-warning" style="margin-top: 10px;">Generate</button>
+		<button onclick="re()" class="button is-danger" style="margin-top: 10px;">Reset</button>
+		
+		<p style="margin-top: 10px;" id="password">your generated password is :</p>
+		<p style="margin-top: 10px;" id="alerts"></p>
+		
+
+	</div>
+</div>
+
+</body>
+</html>
